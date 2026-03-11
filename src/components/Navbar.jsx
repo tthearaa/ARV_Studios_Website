@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Navbar.module.css'
+import { Link } from 'react-router-dom'
 
 const ARVLogo = () => (
   <div className={styles.logoGroup}>
@@ -15,10 +16,19 @@ export default function Navbar({ cartCount, onCartOpen }) {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <div className={styles.left}>
-          <a href="#" className={styles.navLink}>Home</a>
-          <a href="#" className={styles.navLink} data-active="true">Catalog</a>
-          <a href="#" className={styles.navLink}>About</a>
-          <a href="#" className={styles.navLink}>Contact</a>
+          <Link to="/" className={styles.navLink}>Home</Link>
+
+          <Link to="/" className={styles.navLink} >
+            Catalog
+          </Link>
+
+          <Link to="/about" className={styles.navLink}>
+            About
+          </Link>
+
+          <Link to="/ContactPage" className={styles.navLink}>
+            Contact
+          </Link>
         </div>
 
         <a href="#" className={styles.logoWrap}>
