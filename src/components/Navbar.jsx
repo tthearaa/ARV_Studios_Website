@@ -22,8 +22,8 @@ export default function Navbar({ cartCount, onCartOpen }) {
             Catalog
           </Link>
 
-          <Link to="/about" className={styles.navLink}>
-            About
+          <Link to="/Dashboard" className={styles.navLink}>
+            Dashboard
           </Link>
 
           <Link to="/ContactPage" className={styles.navLink}>
